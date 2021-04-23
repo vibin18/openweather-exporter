@@ -21,7 +21,7 @@ type WeatherData interface {
 	GetWeatherFeelsLike() float64
 	GetWeatherPressure() float64
 	GetWeatherHumidity() float64
-	Fetchdata()
+	Fetchdata(cityName string, apiKey string)
 }
 
 func (m *Sig) GetWeatherTemp() float64 {
